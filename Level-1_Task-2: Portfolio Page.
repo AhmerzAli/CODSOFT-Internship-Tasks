@@ -6,7 +6,7 @@
             background-color: rgb(59, 59, 59);
             color: #bea060;
             text-align: center;
-            padding: 2rem 0;
+            padding: 20px;
         }
         body {
             font-family: Arial, sans-serif;
@@ -18,15 +18,15 @@
         
         .section {
             background-color: black;
-            padding: 4rem 0;
+            padding: 40px;
             text-align: center;
         }
         .section-content {
             max-width: 800px;
-            margin: 0 auto;
+            margin:  auto;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
+            gap: 100px;
             align-items: center;
             justify-items: center;
         }
@@ -46,7 +46,7 @@
             background-color: rgb(59, 59, 59);
             color: #bea060;
             text-align: center;
-            padding: 1rem 0;
+            padding: 50px;
         }
     </style>
 </head>
