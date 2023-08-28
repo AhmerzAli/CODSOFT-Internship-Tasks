@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<head>
+    <title>Your Portfolio</title>
+    <style>
+        header {
+            background-color: rgb(59, 59, 59);
+            color: #bea060;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: #bea060;
+        }
+        
+        .section {
+            background-color: black;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .section-content {
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            align-items: center;
+            justify-items: center;
+        }
+        .button {
+            background-color: black;
+            color: #bea060;
+            border:#ffe02f 3px solid;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .button:hover {
+            background-color: #69d950;
+            color: black;
+        }
+        footer {
+            background-color: rgb(59, 59, 59);
+            color: #bea060;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\dell\Pictures\MYLOGO.jpeg" height="100" width="100">
+        <h1>Ahmer Ali</h1>
+        <p>- Web Developer</p><p>- Wordpress Developer</p><p>- Game Developer</p>    
+        
+    </header>
+    <section id="about" class="section">
+        <div class="section-content">
+            <div>
+                <h2>About Me</h2>
+                <img src="C:\Users\dell\Pictures\Saved Pictures\pic.jpg" height="300" width="300">
+                <p>I'm a skilled web and WordPress developer, as well as a passionate game developer. 
+                   I specialize in building attractive and functional websites, bringing creative ideas to life. 
+                   With a knack for both web and game development, I love crafting engaging digital experiences that captivate and inspire. 
+                   Let's create something amazing together</p>
+                <a href="https://ahmeralikiportfoliosite.com/index.php/about-me/">
+                <button class="button">About Me</button>
+                </a>
+            </div>
+                <div class="section-content">
+            <div>
+                <h2>Skills</h2>
+                <p>I have acquired various skills to provide my services.These are as follows</p>
+                <p>1. WordPress Development.<br>2. WordPress SEO.<br>3. HTML/CSS.<br>4. C#/C++.<br>5. Game Development.</p>
+                <a href="https://ahmeralikiportfoliosite.com/index.php/about-me/">
+                <button class="button">View Skills</button>
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="section-content">
+            <div>
+                <h2>Work</h2>
+                <p>Here are the Work that i can do.</p>
+                <a href="https://ahmeralikiportfoliosite.com/index.php/work-services/">
+                <button class="button">View My Projects</button>
+                </a>
+            </div>
+            <section id="resume" class="section">
+            <div class="section-content">
+            <div>
+                <h2>Resume</h2>
+                <p>Check out my Resume to get my overall information.</p>
+                <a href="https://ahmeralikiportfoliosite.com/wp-content/uploads/2023/08/Ahmers-Resume.pdf">
+                <button class="button">Download Resume</button>
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="section-content">
+            <div>
+                <h2>Contact</h2>
+                <p>Feel free to contact me.<br>Email : ahmerzali94@gmail.com<br>Contact NO. : 0316-6274592</p>
+                <a href="https://ahmeralikiportfoliosite.com/index.php/contact-me/">
+                <button class="button">Get in Touch</button>
+                </a>
+            </div>
+            <section id="linkedin" class="section">
+            <div class="section-content">
+            <div>
+                <h2>LinkedIn</h2>
+                <p>Check me out on LinkedIn.</p>
+                <a href="https://www.linkedin.com/in/ahmer-ali-165909247/">
+                <button class="button">Visit LinkedIn</button>
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="guidance" class="section">
+        <div class="section-content">
+            <div>
+                <h2>Guidance</h2>
+                <p>Here is my guidance information.</p>
+                <a href="https://ahmeralikiportfoliosite.com/index.php/guidance/">
+                <button class="button">My Guidance</button>
+                </a>
+            </div>
+            <section id="reviews" class="section">
+            <div class="section-content">
+            <div>
+                <h2>Reviews</h2>
+                <p>Customer or client reviews and testimonials.</p>
+                <a href="https://ahmeralikiportfoliosite.com/index.php/reviews/">
+                <button class="button">Read Reviews</button>
+                </a>
+            </div>
+        </div> 
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Ahmer Ali. All rights reserved.</p>
+    </footer>
+</body>
+</html>
