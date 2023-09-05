@@ -1,156 +1,278 @@
 <!DOCTYPE html>
+
 <head>
-    <title>Your Portfolio</title>
-    <style>
-        header {
-            background-color: rgb(59, 59, 59);
-            color: #bea060;
-            text-align: center;
-            padding: 20px;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: black;
-            color: #bea060;
-        }
-        
-        .section {
-            background-color: black;
-            padding: 40px;
-            text-align: center;
-        }
-        .section-content {
-            max-width: 800px;
-            margin:  auto;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 100px;
-            align-items: center;
-            justify-items: center;
-        }
-        .button {
-            background-color: black;
-            color: #bea060;
-            border:#ffe02f 3px solid;
-            padding: 0.5rem 1rem;
-            cursor: pointer;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .button:hover {
-            background-color: #69d950;
-            color: black;
-        }
-        footer {
-            background-color: rgb(59, 59, 59);
-            color: #bea060;
-            text-align: center;
-            padding: 50px;
-        }
-    </style>
+<title>Ahmer Ali's Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    
+    header 
+    {
+       background-color: #280da5;
+       color: white;
+       text-align: center;
+       padding: 50px ;
+       background-image: url('https://img.freepik.com/free-vector/stylish-glowing-digital-red-lines-banner_1017-23964.jpg'); 
+       background-size: cover; 
+       background-position: center; 
+       background-repeat: no-repeat; 
+       text-align: center;
+    } 
+
+    body 
+    {
+       margin: 0;
+       padding: 0;
+       font-family: Arial, sans-serif;
+       background-color: #38ce65;
+       color: #000000;
+       background-image: url('https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148865393.jpg'); 
+       background-size: cover; 
+       background-repeat: no-repeat; 
+       background-attachment: fixed;
+    }
+
+    nav 
+    {
+      background-color: #efea54;
+      text-align: center;
+      padding: 10px ;
+    }
+
+    nav a 
+    {
+      color: rgb(176, 15, 15);
+      text-decoration: none;
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+
+   .section 
+   {
+      padding: 100px ;
+      text-align: center;
+   }
+
+   .section h2 
+   {
+      font-size: 50px;
+      margin-bottom: 40px;
+   }
+
+   .section p 
+   {
+      font-size: 30px;
+      margin-bottom: 40px;
+   }
+
+  .skills 
+  {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 800px;
+      margin: 0 auto;
+  }
+
+  .skill
+  {
+      width: calc(33.33% - 20px);
+      background-color: #3edcf5;
+      padding: 20px;
+      border-radius: 4px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+  }
+
+  .skill h3
+  {
+      margin-top: 0;
+  }
+
+  .projects 
+  {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .project 
+  {
+      width: calc(33.33% - 20px);
+      margin: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .project img 
+  {
+      width: 100%;
+      height: auto;
+  }
+
+  .resume
+  {
+      text-align: center;
+  }
+
+  .contact 
+  {
+      text-align: center;
+      padding: 50px;
+  }
+
+  .contact a 
+  {
+      color: #280da5;
+      text-decoration: none;
+      padding: 5px;
+  }
+
+  .contact a:hover 
+  {
+      text-decoration: underline;
+  }
+
+  .content 
+  {
+      text-align: center;
+      padding: 100px;
+      color: white; 
+  }
+
+  .fa 
+  {
+    padding: 10px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+  .fa:hover 
+  {
+      opacity: 0.6;
+  }
+
+  .fa-facebook 
+  {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-linkedin 
+  {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa-google 
+  {
+    background: #dd4b39;
+    color: white;
+  }
+
+  footer 
+  {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+</style>
 </head>
+
 <body>
-    <header>
-        <img src="C:\Users\dell\Pictures\MYLOGO.jpeg" height="100" width="100">
-        <h1>Ahmer Ali</h1>
-        <p>- Web Developer</p><p>- Wordpress Developer</p><p>- Game Developer</p>    
-        
-    </header>
-    <section id="about" class="section">
-        <div class="section-content">
-            <div>
-                <h2>About Me</h2>
-                <img src="C:\Users\dell\Pictures\Saved Pictures\pic.jpg" height="300" width="300">
-                <p>I'm a skilled web and WordPress developer, as well as a passionate game developer. 
-                   I specialize in building attractive and functional websites, bringing creative ideas to life. 
-                   With a knack for both web and game development, I love crafting engaging digital experiences that captivate and inspire. 
-                   Let's create something amazing together</p>
-                <a href="https://ahmeralikiportfoliosite.com/index.php/about-me/">
-                <button class="button">About Me</button>
-                </a>
-            </div>
-                <div class="section-content">
-            <div>
-                <h2>Skills</h2>
-                <p>I have acquired various skills to provide my services.These are as follows</p>
-                <p>1. WordPress Development.<br>2. WordPress SEO.<br>3. HTML/CSS.<br>4. C#/C++.<br>5. Game Development.</p>
-                <a href="https://ahmeralikiportfoliosite.com/index.php/about-me/">
-                <button class="button">View Skills</button>
-                </a>
-            </div>
-        </div>
-        </div>
-    </section>
+<header>
+  
+  <h1>Ahmer Ali's Portfolio Task</h1>
+  <p>- Web Developer </p><p>- Wordpress Developer </p><p>- Game Developer </p>
+  
+</header>
 
-    <section id="projects" class="section">
-        <div class="section-content">
-            <div>
-                <h2>Work</h2>
-                <p>Here are the Work that i can do.</p>
-                <a href="https://ahmeralikiportfoliosite.com/index.php/work-services/">
-                <button class="button">View My Projects</button>
-                </a>
-            </div>
-            <section id="resume" class="section">
-            <div class="section-content">
-            <div>
-                <h2>Resume</h2>
-                <p>Check out my Resume to get my overall information.</p>
-                <a href="https://ahmeralikiportfoliosite.com/wp-content/uploads/2023/08/Ahmers-Resume.pdf">
-                <button class="button">Download Resume</button>
-                </a>
-            </div>
-        </div>
-        </div>
-    </section>
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#resume">Resume</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-    <section id="contact" class="section">
-        <div class="section-content">
-            <div>
-                <h2>Contact</h2>
-                <p>Feel free to contact me.<br>Email : ahmerzali94@gmail.com<br>Contact NO. : 0316-6274592</p>
-                <a href="https://ahmeralikiportfoliosite.com/index.php/contact-me/">
-                <button class="button">Get in Touch</button>
-                </a>
-            </div>
-            <section id="linkedin" class="section">
-            <div class="section-content">
-            <div>
-                <h2>LinkedIn</h2>
-                <p>Check me out on LinkedIn.</p>
-                <a href="https://www.linkedin.com/in/ahmer-ali-165909247/">
-                <button class="button">Visit LinkedIn</button>
-                </a>
-            </div>
-        </div>
-        </div>
-    </section>
+<div class="content">
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>I'm a skilled web and WordPress developer, as well as a passionate game developer. 
+    I specialize in building attractive and functional websites, bringing creative ideas to life. 
+    With a knack for both web and game development, I love crafting engaging digital experiences that captivate and inspire. 
+    Let's create something amazing together</p>
+</section>
 
-    <section id="guidance" class="section">
-        <div class="section-content">
-            <div>
-                <h2>Guidance</h2>
-                <p>Here is my guidance information.</p>
-                <a href="https://ahmeralikiportfoliosite.com/index.php/guidance/">
-                <button class="button">My Guidance</button>
-                </a>
-            </div>
-            <section id="reviews" class="section">
-            <div class="section-content">
-            <div>
-                <h2>Reviews</h2>
-                <p>Customer or client reviews and testimonials.</p>
-                <a href="https://ahmeralikiportfoliosite.com/index.php/reviews/">
-                <button class="button">Read Reviews</button>
-                </a>
-            </div>
-        </div> 
-        </div>
-    </section>
+<section id="skills" class="section">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill">
+      <h3>Web Development</h3>
+      <p>Creating visually appealing and user-friendly websites.</p>
+    </div>
+    <div class="skill">
+      <h3>Front-End Development</h3>
+      <p>Building interactive and responsive front-end interfaces.</p>
+    </div>
+    <div class="skill">
+      <h3>Wordpress Development</h3>
+      <p>Creating appealing and easy to use websites using wordpress.</p>
+    </div>
+    <div class="skill">
+        <h3>Game Development Development</h3>
+        <p>Creating appealing and fun to play games.</p>
+      </div>
+  </div>
+</section>
 
-    <footer>
-        <p>&copy; 2023 Ahmer Ali. All rights reserved.</p>
-    </footer>
+<section id="projects" class="section">
+  <h2>My Projects</h2>
+  <div class="projects">
+    <div class="project">
+      <img src="https://themewagon.com/wp-content/uploads/2018/10/pizza-1.jpg"height="500" width="500">
+      <div class="project-content">
+        <h3>Project # 1</h3>
+        <p>A Local HTML website similar to this for a project in university.</p>
+      </div>
+    </div>
+    <div class="project">
+      <img src="https://th.bing.com/th/id/R.e7ee21855e8eec5b85f5796dc5587feb?rik=jLbtpmvkA24jFw&riu=http%3a%2f%2fwww.esa.int%2fvar%2fesa%2fstorage%2fimages%2fesa_multimedia%2fimages%2f2016%2f04%2faim_logo_negative_version%2f15952684-1-eng-GB%2fAIM_logo_negative_version.jpg&ehk=NjoAPmNyLJfNP1HRner5OphgDtj5P5JM6Vxvw%2b2S308%3d&risl=&pid=ImgRaw&r=0.jpg"height="500" width="500">
+      <div class="project-content">
+        <h3>Project # 2</h3>
+        <p>A FYP project called AI-Marketer(AIM) for short.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="resume" class="section">
+  <h2>My Resume</h2>
+  <div class="resume">
+    <p>Here is a resume providing all the information of my education, skills, certifications etc.</p>
+    <a href="https://ahmeralikiportfoliosite.com/wp-content/uploads/2023/08/Ahmers-Resume.pdf">View Resume.</a>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+  <div class="contact">
+    <p>Feel free to contact me via email at ahmerzali94@gmail.com.</p>
+    <p>Check me out on LinkedIn</p><a href="https://www.linkedin.com/in/ahmer-ali-165909247/" class="fa fa-linkedin"></a>
+  </div>
+</div>
+</section>
+
+<footer>
+    <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+    <a href="https://mail.gmail.com" class="fa fa-google"></a>
+  <p>&copy; 2023 Ahmer Ali's Portfolio.  All rights reserved.</p>
+</footer>
 </body>
 </html>
