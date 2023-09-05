@@ -3,7 +3,8 @@
 <head>
                                              
     <script>
-        function addChar(character) {
+        function addChar(character)
+        {
             var display = document.getElementById('display');
             if (display.value === "0") {
                 display.value = character;
@@ -12,17 +13,20 @@
             }
         }
 
-        function deleteChar() {
+        function deleteChar() 
+        {
             var display = document.getElementById('display');
             display.value = display.value.substring(0, display.value.length - 1);
         }
 
-        function percent() {
+        function percent() 
+        {
             var display = document.getElementById('display');
             display.value += "%";
         }
 
-        function compute() {
+        function compute() 
+        {
             var display = document.getElementById('display');
             try {
                 display.value = eval(display.value);
@@ -35,7 +39,8 @@
     <title> Calculator using HTML, CSS, JavaScript</title>
     <style>
        
-        body {
+        body 
+        {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
@@ -46,7 +51,8 @@
             min-height: 700px;
         }
         
-        .calculator {
+        .calculator 
+        {
             background-color: #333;
             border-radius: 10px;
             padding: 20px;
@@ -54,7 +60,8 @@
             text-align: center;
         }
         
-        #display {
+        #display 
+        {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
@@ -65,13 +72,8 @@
             border-radius: 5px;
         }
         
-        .btn-row {
-            display: flex;
-            justify-content: space-between;
-            margin: 5px 0;
-        }
-        
-        .btn {
+        .btn 
+        {
             width: calc(25% - 10px);
             padding: 15px 0;
             font-size: 18px;
@@ -83,7 +85,15 @@
             transition: background-color 0.3s ease;
         }
         
-        .btn:hover {
+        .btn-row 
+        {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+        }
+        
+        .btn:hover 
+        {
             background-color: #555;
         }
     </style>
